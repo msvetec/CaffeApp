@@ -1,0 +1,548 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{858F2E05-41AD-48A0-A615-97D8F6AF92CA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>KaficBeertija</RootNamespace>
+    <AssemblyName>KaficApp</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>5</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>KaficBeertija.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>iconaPI.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>8CA3540284592E84DAC30F6359474982E03AF4ED</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>KaficBeertija_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Artikl.cs" />
+    <Compile Include="BazaPodatakaDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BazaPodatakaDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dobavljac.cs" />
+    <Compile Include="frmArtikl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmArtikl.Designer.cs">
+      <DependentUpon>frmArtikl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAzurirajArtikl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAzurirajArtikl.Designer.cs">
+      <DependentUpon>frmAzurirajArtikl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAzurirajDobavljaca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAzurirajDobavljaca.Designer.cs">
+      <DependentUpon>frmAzurirajDobavljaca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAzurirajKorisnika.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAzurirajKorisnika.Designer.cs">
+      <DependentUpon>frmAzurirajKorisnika.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAzurirajTipKorisnika.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAzurirajTipKorisnika.Designer.cs">
+      <DependentUpon>frmAzurirajTipKorisnika.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAzurirajVrstuArtikla.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAzurirajVrstuArtikla.Designer.cs">
+      <DependentUpon>frmAzurirajVrstuArtikla.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDobavljaci.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDobavljaci.Designer.cs">
+      <DependentUpon>frmDobavljaci.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmKafic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKafic.Designer.cs">
+      <DependentUpon>frmKafic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmKorisnici.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKorisnici.Designer.cs">
+      <DependentUpon>frmKorisnici.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNarudzbenica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNarudzbenica.Designer.cs">
+      <DependentUpon>frmNarudzbenica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNovaVrstaArtikla.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNovaVrstaArtikla.Designer.cs">
+      <DependentUpon>frmNovaVrstaArtikla.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNoviArtikl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNoviArtikl.Designer.cs">
+      <DependentUpon>frmNoviArtikl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNoviDobavljac.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNoviDobavljac.Designer.cs">
+      <DependentUpon>frmNoviDobavljac.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNoviKorisnik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNoviKorisnik.Designer.cs">
+      <DependentUpon>frmNoviKorisnik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNoviTipKorisnika.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNoviTipKorisnika.Designer.cs">
+      <DependentUpon>frmNoviTipKorisnika.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRegistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRegistration.Designer.cs">
+      <DependentUpon>frmRegistration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReportNarudzbenica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReportNarudzbenica.Designer.cs">
+      <DependentUpon>frmReportNarudzbenica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReportRacun.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReportRacun.Designer.cs">
+      <DependentUpon>frmReportRacun.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kafic.cs" />
+    <Compile Include="KaficDBDataSetNew.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KaficDBDataSetNew.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Korisnik.cs" />
+    <Compile Include="Logic\Crypto.cs" />
+    <Compile Include="Logic\KorisnikLogic.cs" />
+    <Compile Include="Logic\LoginLogic.cs" />
+    <Compile Include="Logic\ProvjeraBaze.cs" />
+    <Compile Include="Logic\StaticVarijable.cs" />
+    <Compile Include="KaficDB.cs" />
+    <Compile Include="NarDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NarDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Narudzbenica.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Racuni.cs" />
+    <Compile Include="ReportDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Statistika_rada.cs" />
+    <Compile Include="Stavke_narudzbenice.cs" />
+    <Compile Include="Stavke_racuna.cs" />
+    <Compile Include="Tip_korisnika.cs" />
+    <Compile Include="ucArtikli.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucArtikli.Designer.cs">
+      <DependentUpon>ucArtikli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucDobavljac.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucDobavljac.Designer.cs">
+      <DependentUpon>ucDobavljac.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucKorisnici.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucKorisnici.Designer.cs">
+      <DependentUpon>ucKorisnici.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucPregledNarudzbenice.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucPregledNarudzbenice.Designer.cs">
+      <DependentUpon>ucPregledNarudzbenice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucPregledRacuna.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucPregledRacuna.Designer.cs">
+      <DependentUpon>ucPregledRacuna.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucProdaja.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucProdaja.Designer.cs">
+      <DependentUpon>ucProdaja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucStatistikaKorisnika.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucStatistikaKorisnika.Designer.cs">
+      <DependentUpon>ucStatistikaKorisnika.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucStatistikaRada.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucStatistikaRada.Designer.cs">
+      <DependentUpon>ucStatistikaRada.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucStatistikaSvihDjelatnika.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucStatistikaSvihDjelatnika.Designer.cs">
+      <DependentUpon>ucStatistikaSvihDjelatnika.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vrsta_artikla.cs" />
+    <EmbeddedResource Include="frmArtikl.resx">
+      <DependentUpon>frmArtikl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAzurirajArtikl.resx">
+      <DependentUpon>frmAzurirajArtikl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAzurirajDobavljaca.resx">
+      <DependentUpon>frmAzurirajDobavljaca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAzurirajKorisnika.resx">
+      <DependentUpon>frmAzurirajKorisnika.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAzurirajTipKorisnika.resx">
+      <DependentUpon>frmAzurirajTipKorisnika.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAzurirajVrstuArtikla.resx">
+      <DependentUpon>frmAzurirajVrstuArtikla.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDobavljaci.resx">
+      <DependentUpon>frmDobavljaci.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKafic.resx">
+      <DependentUpon>frmKafic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKorisnici.resx">
+      <DependentUpon>frmKorisnici.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNarudzbenica.resx">
+      <DependentUpon>frmNarudzbenica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNovaVrstaArtikla.resx">
+      <DependentUpon>frmNovaVrstaArtikla.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNoviArtikl.resx">
+      <DependentUpon>frmNoviArtikl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNoviDobavljac.resx">
+      <DependentUpon>frmNoviDobavljac.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNoviKorisnik.resx">
+      <DependentUpon>frmNoviKorisnik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNoviTipKorisnika.resx">
+      <DependentUpon>frmNoviTipKorisnika.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegistration.resx">
+      <DependentUpon>frmRegistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReportNarudzbenica.resx">
+      <DependentUpon>frmReportNarudzbenica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReportRacun.resx">
+      <DependentUpon>frmReportRacun.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ReportNarudzbenica.rdlc" />
+    <EmbeddedResource Include="ReportRacun.rdlc" />
+    <EmbeddedResource Include="ucArtikli.resx">
+      <DependentUpon>ucArtikli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucDobavljac.resx">
+      <DependentUpon>ucDobavljac.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucKorisnici.resx">
+      <DependentUpon>ucKorisnici.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucPregledNarudzbenice.resx">
+      <DependentUpon>ucPregledNarudzbenice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucPregledRacuna.resx">
+      <DependentUpon>ucPregledRacuna.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucProdaja.resx">
+      <DependentUpon>ucProdaja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucStatistikaKorisnika.resx">
+      <DependentUpon>ucStatistikaKorisnika.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucStatistikaRada.resx">
+      <DependentUpon>ucStatistikaRada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucStatistikaSvihDjelatnika.resx">
+      <DependentUpon>ucStatistikaSvihDjelatnika.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="BazaPodatakaDataSet.xsc">
+      <DependentUpon>BazaPodatakaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BazaPodatakaDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BazaPodatakaDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BazaPodatakaDataSet.xss">
+      <DependentUpon>BazaPodatakaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="KaficBeertija_TemporaryKey.pfx" />
+    <None Include="KaficDBDataSetNew.xsc">
+      <DependentUpon>KaficDBDataSetNew.xsd</DependentUpon>
+    </None>
+    <None Include="KaficDBDataSetNew.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KaficDBDataSetNew.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KaficDBDataSetNew.xss">
+      <DependentUpon>KaficDBDataSetNew.xsd</DependentUpon>
+    </None>
+    <Resource Include="KaficUpute-SvetecPavlekBoric.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <None Include="NarDataSet.xsc">
+      <DependentUpon>NarDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="NarDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>NarDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NarDataSet.xss">
+      <DependentUpon>NarDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="ReportDataSet1.xsc">
+      <DependentUpon>ReportDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="ReportDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ReportDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ReportDataSet1.xss">
+      <DependentUpon>ReportDataSet1.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BazaPodataka.mdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="BazaPodataka_log.ldf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <DependentUpon>BazaPodataka.mdf</DependentUpon>
+    </Content>
+    <Content Include="iconaPI.ico" />
+    <None Include="Resources\iconaPI.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="Microsoft.ReportViewer.Common">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.ReportViewer.DataVisualization">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.ReportViewer.ProcessingObjectModel">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
